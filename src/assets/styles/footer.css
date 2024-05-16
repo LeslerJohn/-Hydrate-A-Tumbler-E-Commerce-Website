@@ -1,0 +1,136 @@
+.foot {
+  background-color: #fbfbfb;
+  font-family: "Inter", "Helvetica Neue", Helvetica, Arial;
+  margin-top: 80px;
+}
+
+.footer-container {
+  flex-direction: column;
+}
+
+.footer-up {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: #3c3c3c;
+}
+
+.footer-up div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.footer-up p {
+  font-size: 0.8rem;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+}
+
+.line-break {
+  border: 1px solid rgb(150, 147, 147);
+  width: 60%;
+}
+
+.footer-down {
+  padding: 4rem 1rem;
+  display: flex;
+  align-items: top;
+  gap: 5rem;
+}
+
+.box1 {
+  width: 14rem;
+}
+
+.details {
+  font-size: 0.8rem;
+  padding-bottom: 2rem;
+  line-height: 1.5rem;
+}
+
+.footer-title {
+  margin-bottom: 2rem;
+}
+
+.footer-down a {
+  font-size: 0.8rem;
+}
+
+.link {
+  display: block;
+  color: rgb(98, 98, 98);
+  text-decoration: none;
+  line-height: 1.5rem;
+}
+
+.foot img {
+  width: 16px;
+  aspect-ratio: 1;
+}
+
+.footer-icons img {
+  margin-right: 0.5rem;
+  width: 20px;
+}
+
+.temporaryfoot {
+  height: 450px;
+  background-image: url("../../assets/images/footcover.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-blend-mode: darken;
+  opacity: 1;
+}
+
+.temporaryfoot-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 450px;
+  opacity: 1;
+}
+
+.temporaryfoot-container h3 {
+  font-size: 2rem;
+  font-weight: 300;
+  color: black;
+  padding: 0.5rem 0.7rem;
+  opacity: 1;
+}
+
+.temporaryfoot-container p {
+  font-weight: 300;
+  font-size: 1.1rem;
+  color: black;
+  padding: 0.5rem 0.7rem;
+  text-align: center;
+  opacity: 1;
+}
+
+@media only screen and (max-width: 768px) {
+  .line-break {
+    width: 90%;
+  }
+  .footer-down {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .line-break {
+    width: 90%;
+  }
+}

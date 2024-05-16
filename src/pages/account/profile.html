@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Account</title>
+    <link rel="icon" href="../../assets/icons/LOGO.png" />
+    <link rel="stylesheet" href="../../assets/styles/global.css" />
+    <link rel="stylesheet" href="../../assets/styles/header.css" />
+    <link rel="stylesheet" href="../../assets/styles/sidebar.css" />
+    <link rel="stylesheet" href="../../assets/styles/footer.css" />
+    <link rel="stylesheet" href="profile.css" />
+  </head>
+  <body>
+    <component-header> </component-header>
+
+    <div class="container con">
+      <component-sidebar></component-sidebar>
+      <main>
+        <h1>My Account</h1>
+        <h3>Account Information</h3>
+
+        <div class="contact-info">
+          <h5>Contact Information</h5>
+          <div class="contact-info-item">
+            <div class="contact-info-item-label">Name:</div>
+            <div class="contact-info-item-value">Alpez, Daniela</div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-item-label">Email:</div>
+            <div class="contact-info-item-value">danielaalpez@gmail.com</div>
+          </div>
+          <div class="edit">
+            <a href="">Edit</a>
+            |
+            <a href="">Change Password</a>
+          </div>
+        </div>
+        <div class="recent-orders">
+          <h3>Recent Orders</h3>
+          <div class="recent-orders-item">
+            <div class="recent-orders-item-label">
+              You have no placed orders
+            </div>
+            <div class="recent-orders-item-value"></div>
+          </div>
+          <div class="recent-orders-item">
+            <div class="recent-orders-item-label"></div>
+            <div class="recent-orders-item-value"></div>
+          </div>
+          <div class="recent-orders-item">
+            <div class="recent-orders-item-label"></div>
+            <div class="recent-orders-item-value"></div>
+          </div>
+        </div>
+        <div class="address-book">
+          <div class="book-title">
+            <h3>Address Book</h3>
+            <a href="">Manage Addresses</a>
+          </div>
+          <div class="book-items">
+            <div class="address-book-item">
+              <h6>Default Billing Address</h6>
+              <p>You have not set a default billing address</p>
+              <a href="">Edit Adress</a>
+            </div>
+            <div class="address-book-item">
+              <h6>Default Billing Address</h6>
+              <p>You have not set a default billing address</p>
+              <a href="">Edit Adress</a>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <component-footer></component-footer>
+    <script src="../../layouts/header/header-component.js"></script>
+    <script src="../../layouts/footer/footer-component.js"></script>
+    <script src="../../layouts/sidebar/sidebar-component.js"></script>
+  </body>
+</html>

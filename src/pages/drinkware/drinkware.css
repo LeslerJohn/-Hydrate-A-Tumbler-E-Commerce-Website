@@ -1,0 +1,127 @@
+main {
+  padding-top: 120px !important;
+}
+
+.middle-header ul li:nth-child(2) a {
+  border-bottom: 2px solid black;
+}
+
+.hero {
+  width: 100dvw;
+  aspect-ratio: 3/1;
+  background-image: url(../../assets/images/drinkware.png);
+  background-size: contain;
+}
+.drinkware {
+  width: 100%;
+  padding: 2rem 1rem;
+  display: flex;
+  gap: 3rem;
+}
+
+.filter {
+  width: 300px;
+  overflow: hidden;
+  transition: all 100ms linear;
+}
+
+.filter .menu {
+  transition: all 100ms ease;
+}
+
+.filter .row {
+  position: relative;
+  color: black;
+  font-size: 14px;
+  width: 100%;
+  padding: 14px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.filter .fas {
+  width: 26px;
+  height: 26px;
+  top: 10px;
+  font-size: 20px;
+  text-align: center;
+  object-fit: contain;
+  margin-left: 20px;
+  transition: all 0.2s ease;
+}
+
+.filter .nav-item {
+  top: 12px;
+  margin-left: 10px;
+  display: block;
+  transition: all 0.5s ease;
+}
+
+.filter .row:hover {
+  background-color: #cdcdcd;
+}
+
+.filter .arrow {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 18px;
+  width: 18px;
+  rotate: 90deg;
+  transition: all 0.2s ease;
+}
+
+.filter .active .fas {
+  transform: rotate(-180deg);
+}
+
+.filter .sub-menu {
+  padding: 6px;
+  margin-top: -10px;
+  list-style: none;
+  display: none;
+  width: 100%;
+  transition: all 0.5s ease;
+}
+
+.filter .sub-menu label {
+  font-size: 13px;
+  font-weight: 400;
+  margin: 10px;
+}
+
+.filter .sub-menu li {
+  padding: 4px 12px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+
+.filter .active .sub-menu {
+  display: block;
+}
+
+.drinkware-products {
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+}
+
+.drinkware-products h1 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  font-family: "Inter";
+}
+
+.products-container {
+  display: flex;
+  justify-content: start;
+  width: 100%;
+  gap: 2rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../../assets/styles/global.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .accordion {
+        max-width: 530px;
+        width: 100%;
+        background-color: #fff;
+        margin: 0 15px;
+        padding: 15px;
+        border-radius: 6px;
+        box-shadow: 0 0px 4px rgba(0, 0, 0, 0.2);
+      }
+
+      .accordion .accordion-content {
+        margin: 16px 0;
+        border-radius: 4px;
+        border: 1px solid #dbdbdb;
+        overflow: hidden;
+        background-color: lightblue;
+      }
+
+      .accordion-content header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 50px;
+        padding: 0 15px;
+        transition: all 0.3s linear;
+        cursor: pointer;
+      }
+      .accordion-content header .title {
+        font-size: 14px;
+        font-weight: 500;
+        color: rgb(51, 51, 51);
+      }
+      .accordion-content header .image {
+        width: 12px;
+        height: 12px;
+        margin-right: 10px;
+        vertical-align: middle;
+        cursor: pointer;
+        transition: transform 0.3s;
+      }
+      .accordion-content .description {
+        padding: 0px 15px;
+        font-size: 12px;
+        font-weight: 400;
+        height: 0px;
+        overflow: hidden;
+        transition: all 0.3s linear;
+      }
+
+      .accordion-content.open {
+        padding-bottom: 10px;
+      }
+
+      .accordion-content.open .description {
+        padding: 10px;
+      }
+
+      .accordion-content .open header {
+        min-height: 35px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="accordion">
+      <div class="accordion-content">
+        <header class=".accordion-header">
+          <span class="title">1. What is hydrate</span>
+          <img
+            class="image"
+            src="../../assets/icons/icons8-triangle-24.png"
+            alt=""
+          />
+        </header>
+
+        <p class="description">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis
+          impedit assumenda, cupiditate distinctio similique, iusto, ad
+          dignissimos commodi deserunt ex ut nisi dolorum! Recusandae natus ut,
+          accusantium debitis possimus exercitationem?
+        </p>
+      </div>
+      <div class="accordion-content">
+        <header class=".accordion-header">
+          <span class="title">1. What is hydrate</span>
+          <img
+            class="image"
+            src="../../assets/icons/icons8-triangle-24.png"
+            alt=""
+          />
+        </header>
+
+        <p class="description">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis
+          impedit assumenda, cupiditate distinctio similique, iusto, ad
+          dignissimos commodi deserunt ex ut nisi dolorum! Recusandae natus ut,
+          accusantium debitis possimus exercitationem?
+        </p>
+      </div>
+      <div class="accordion-content">
+        <header class=".accordion-header">
+          <span class="title">1. What is hydrate</span>
+          <img
+            class="image"
+            src="../../assets/icons/icons8-triangle-24.png"
+            alt=""
+          />
+        </header>
+        <p class="description">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis
+          impedit assumenda, cupiditate distinctio similique, iusto, ad
+          dignissimos commodi deserunt ex ut nisi dolorum! Recusandae natus ut,
+          accusantium debitis possimus exercitationem? Lorem ipsum dolor sit
+          amet consectetur adipisicing elit. Ex quas laudantium beatae tenetur
+          quasi cumque facere aspernatur aperiam accusamus nobis. Officiis
+          inventore asperiores minima voluptas cumque. Tempore nobis laudantium
+          porro.
+        </p>
+      </div>
+    </div>
+
+    <script>
+      const accordionContent = document.querySelectorAll(".accordion-content");
+
+      accordionContent.forEach((item, index) => {
+        let accordionHeader = item.querySelector(".accordion-header");
+
+        accordionHeader.addEventListener("click", () => {
+          item.classList.toggle("open");
+
+          let accordionDescription = item.querySelector(".description");
+
+          if (item.classList.contains("open")) {
+            accordionDescription.style.height = `${accordionDescription.scrollHeight}px`;
+            item.querySelector(".image").style.transform = "rotate(180deg)";
+          } else {
+            accordionDescription.style.height = "0px";
+            item.querySelector(".image").style.transform = "rotate(0deg)";
+          }
+          removeOpen(index);
+        });
+      });
+
+      function removeOpen(index1) {
+        accordionContent.forEach((item2, index2) => {
+          if (index1 != index2) {
+            item2.classList.remove("open");
+            item2.querySelector(".description").style.height = "0px";
+            item2.querySelector(".image").style.transform = "rotate(0deg)";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

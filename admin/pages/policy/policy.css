@@ -1,0 +1,11 @@
+.policy {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.policy a {
+  text-decoration: underline;
+  font-size: 1.1rem;
+}

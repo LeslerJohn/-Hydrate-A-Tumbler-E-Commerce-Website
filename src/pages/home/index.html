@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hydrate</title>
+    <link rel="icon" href="../../assets/icons/LOGO.png" />
+    <link rel="stylesheet" href="../../assets/styles/global.css" />
+    <link rel="stylesheet" href="../../assets/styles/header.css" />
+    <link rel="stylesheet" href="../../assets/styles/footer.css" />
+    <link rel="stylesheet" href="../../assets/styles/card-product.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <component-header> </component-header>
+
+    <main>
+      <section class="hero">
+        <div class="slider">
+          <div class="list">
+            <div class="item">
+              <img src="../../assets/images/Hero/bg1.png" alt="" />
+            </div>
+            <div class="item">
+              <img src="../../assets/images/Hero/bg2.png" alt="" />
+            </div>
+            <div class="item">
+              <img src="../../assets/images/Hero/bg3.png" alt="" />
+            </div>
+            <div class="item">
+              <img src="../../assets/images/Hero/bg4.png" alt="" />
+            </div>
+          </div>
+
+          <div class="slider-buttons">
+            <button id="prev"><</button>
+            <button id="next">></button>
+          </div>
+
+          <ul class="dots">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </section>
+      <section class="hero2">
+        <div class="container line">
+          <div class="shot1">
+            <p>AVAILABLE IN:</p>
+            <img src="../../assets/images/Store/SM.png" alt="" />
+            <img src="../../assets/images/Store/KCC.png" alt="" />
+            <img src="../../assets/images/Store/ROBINSON.png" alt="" />
+            <img src="../../assets/images/Store/CITYMALL.png" alt="" />
+            <img src="../../assets/images/Store/VISTAMALL.jpg" alt="" />
+          </div>
+          <p class="dot-line-break"></p>
+          <div class="shot2">
+            <div class="shot3">
+              <p>New Arrivals</p>
+              <a href="">View All New Arrivals</a>
+            </div>
+            <div class="shot4">
+              <div class="categories">
+                <h5>Categories</h5>
+                <input type="checkbox" name="cruiser" id="cruiser" />
+                <label for="cruiser">Cruiser</label><br />
+                <input type="checkbox" name="canteen" id="canteen" />
+                <label for="cruiser">Canteen</label><br />
+                <input type="checkbox" name="tumbler" id="tumbler" />
+                <label for="cruiser">Tumbler</label><br />
+                <input type="checkbox" name="cup" id="cup" />
+                <label for="cruiser">Cummuter Cup</label>
+                <h5>Price</h5>
+              </div>
+              <div class="categories-images">
+                <div>
+                  <img src="../../assets/images/Category/4.png" alt="" />
+                  <p>24oz Cuiser with Handle</p>
+                </div>
+                <div>
+                  <img src="../../assets/images/mockup-tumbler.jpg" alt="" />
+                  <p>24oz Canteen with Handle</p>
+                </div>
+                <div>
+                  <img src="../../assets/images/Category/W1.png" alt="" />
+                  <p>24oz Cup with Flip Lid</p>
+                </div>
+                <div>
+                  <img src="../../assets/images/Category/T1.png" alt="" />
+                  <p>24oz Tumbler with Flip Lid</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="container line">
+          <div class="about1">
+            <div class="about-image">
+              <img src="../../assets/images/about.png" alt="" />
+            </div>
+            <div class="about-details">
+              <p>ABOUT US</p>
+              <h2>Welcome to Hydrate</h2>
+              <p>
+                At Hydrate, we believe that staying hydrated doesn’t have to be
+                boring. That’s why we’ve curated a collection of the best
+                tumblers on the market. Our tumblers come in a variety of sizes
+                and styles, so you can stay cool, hydrated, and stylish no
+                matter where life takes you. Say goodbye to boring plastic water
+                bottles and hello to your new favorite tumbler. Shop our
+                collection today.
+              </p>
+              <a href="">Read More...</a>
+            </div>
+          </div>
+          <div class="about2">
+            <h2>Why Choose Hydrate Tumblers?</h2>
+            <p>
+              Our tumblers are designed for your active lifestyle. Our insulated
+              tumblers keep your drinks cold for up to 24 hours and hot for up
+              to 12 hours, while our sports tumblers are perfect for your
+              on-the-go lifestyle. With our travel tumblers, you can take your
+              favorite drinks with you wherever you go. Plus, our stylish
+              designs mean you’ll never have to sacrifice fashion for function.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="products">
+        <div class="container line">
+          <div class="products-title">
+            <p>Arrivals</p>
+            <a href="">View All New Arrivals</a>
+          </div>
+          <div class="products-container">
+            <component-card></component-card>
+            <component-card></component-card>
+            <component-card></component-card>
+            <component-card></component-card>
+            <component-card></component-card>
+            <component-card></component-card>
+            <component-card></component-card>
+            <component-card></component-card>
+          </div>
+        </div>
+      </section>
+      <section class="feedback">
+        <div class="container line">
+          <p class="feedback-title">Our customer speak for us</p>
+          <div class="customers">
+            <div class="message">
+              <p>Lorem Ipsum</p>
+              <div class="feedback-profile">
+                <img src="../../assets/images/profile.jpg" alt="" />
+                <p class="customer-name">JUIA KEYS</p>
+              </div>
+            </div>
+            <div class="message">
+              <p>Lorem Ipsum</p>
+              <div class="feedback-profile">
+                <img src="../../assets/images/profile.jpg" alt="" />
+                <p class="customer-name">LUIS ADRIAN</p>
+              </div>
+            </div>
+            <div class="message">
+              <p>Lorem Ipsum</p>
+              <div class="feedback-profile">
+                <img src="../../assets/images/profile.jpg" alt="" />
+                <p class="customer-name">MARIA ANNA</p>
+              </div>
+            </div>
+          </div>
+          <p class="feedback-counts">4.8 average rating from 1814 reviews</p>
+        </div>
+      </section>
+    </main>
+
+    <component-footer></component-footer>
+
+    <script src="../../layouts/header/header-component.js"></script>
+    <script src="../../layouts/footer/footer-component.js"></script>
+    <script src="../../assets/scripts/limitQuantity.js"></script>
+    <script src="slider.js"></script>
+    <script src="../../components/cards/card-product.js"></script>
+    <!-- <script src="../../features/authentication/components/verify.js"></script>
+    <script src="../../features/authentication/components/isLoggedIn.js"></script> -->
+  </body>
+</html>

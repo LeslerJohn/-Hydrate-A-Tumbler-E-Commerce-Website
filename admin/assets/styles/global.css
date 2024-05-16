@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "Inter";
+  src: url(../fonts/Inter-VariableFont_slnt\wght.ttf);
+}
+
+@font-face {
+  font-family: "Sulphur";
+  src: url(../fonts/SulphurPoint-Bold.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", "Helvetica Neue", "Helvetica";
+}
+
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  margin-top: 100px;
+  margin-left: 120px;
+  margin-right: 60px;
+  transition: all 0.25s ease;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.path {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-size: 12px;
+}
+
+.path img {
+  height: 12px;
+  aspect-ratio: 1;
+}

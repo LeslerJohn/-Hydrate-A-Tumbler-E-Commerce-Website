@@ -1,0 +1,97 @@
+.gallery {
+  width: 100%;
+  height: 100%;
+  padding: 16px;
+  box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+}
+
+.gallery .buttons {
+  width: 100%;
+  height: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0rem;
+}
+
+.gallery .left button {
+  border: 1px solid rgb(212, 212, 212);
+  background-color: transparent;
+  padding: 0.5rem 1.5rem;
+  border-radius: 8px;
+  transition: all 0.25s ease;
+}
+
+.gallery .left button:hover {
+  background-color: #6c6c6c;
+  color: white;
+  border: none;
+}
+
+.gallery .right input {
+  border: 1px solid rgb(226, 226, 226);
+  background-color: transparent;
+  padding: 0.5rem 0.3rem;
+  border-radius: 8px;
+}
+
+.gallery .filter {
+  height: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border: 1px solid rgb(218, 218, 218);
+  border-radius: 8px;
+  font-size: 0.8rem;
+}
+
+.gallery .filter .right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.gallery .filter .right img {
+  width: 16px;
+  height: 16px;
+  background-color: #515151;
+}
+
+.gallery .products {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: top;
+  margin-top: 1.5rem;
+}
+
+.gallery .products .product {
+  height: 150px;
+  width: 110px;
+  box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.gallery .products .product img {
+  width: 90%;
+  height: 80%;
+  object-fit: cover;
+  margin: 8px;
+  background-color: #3e3e3e;
+}
+
+.gallery .products .product p {
+  font-size: 0.7rem;
+  font-weight: 400;
+  margin: 8px;
+}

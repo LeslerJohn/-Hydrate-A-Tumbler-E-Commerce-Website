@@ -1,0 +1,73 @@
+.list {
+  height: 100%;
+  width: 100%;
+  box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.list-head {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-head input {
+  width: 330px;
+  padding: 0.5rem;
+  box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+}
+
+.list-head button {
+  width: 150px;
+  padding: 0.8rem;
+  box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  background-color: transparent;
+}
+
+.list table {
+  width: 100%;
+  height: 100%;
+  margin-top: 1rem;
+  border-spacing: 12px;
+}
+
+.list table thead {
+  border-radius: 8px;
+  padding: 0.5rem;
+  height: 2rem;
+  border: 1px solid black;
+}
+
+.list table thead th {
+  text-align: start;
+}
+
+.list table tbody td {
+  font-size: 0.8rem;
+  object-fit: contain;
+  padding: 0;
+}
+
+.list table .product {
+  width: 260px;
+  display: flex;
+  align-items: center;
+}
+
+.list table .product p {
+  margin-left: 12px;
+}
+
+.product img {
+  width: 62px;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.list table .action button {
+  background-color: transparent;
+  margin-right: 0.4rem;
+}

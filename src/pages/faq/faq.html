@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frequently Asked Questions</title>
+    <link rel="icon" href="../../assets/icons/LOGO.png" />
+    <link rel="stylesheet" href="../../assets/styles/global.css" />
+    <link rel="stylesheet" href="../../assets/styles/header.css" />
+    <link rel="stylesheet" href="../../assets/styles/footer.css" />
+    <link rel="stylesheet" href="faq.css" />
+  </head>
+  <body>
+    <component-header> </component-header>
+    <main>
+      <h2>Frequently Asked Questions</h2>
+
+      <div class="accordion">
+        <div class="accordion-content">
+          <div class="accordion-header">
+            <span class="title"
+              >1. Is Hydrate an original/authentic brand?</span
+            >
+            <img
+              class="image"
+              src="../../assets/icons/icons8-triangle-24.png"
+              alt=""
+            />
+          </div>
+
+          <p class="description">
+            Hydrate is an original brand of insulated water flasks. 100%
+            authentic.
+          </p>
+        </div>
+        <div class="accordion-content">
+          <div class="accordion-header">
+            <span class="title">2. Where is Hydrate Bottle made?</span>
+            <img
+              class="image"
+              src="../../assets/icons/icons8-triangle-24.png"
+              alt=""
+            />
+          </div>
+
+          <p class="description">
+            Hydrate is designed in California, USA and manufactured overseas.
+          </p>
+        </div>
+        <div class="accordion-content">
+          <div class="accordion-header">
+            <span class="title">3. Is Hydrate a local brand?</span>
+            <img
+              class="image"
+              src="../../assets/icons/icons8-triangle-24.png"
+              alt=""
+            />
+          </div>
+          <p class="description">
+            Hydrate is a collaboration of Filipino and American creative
+            designers. It is proudly a Filipino-American brand.
+          </p>
+        </div>
+        <div class="accordion-content">
+          <div class="accordion-header">
+            <span class="title">3. Is Hydrate a local brand?</span>
+            <img
+              class="image"
+              src="../../assets/icons/icons8-triangle-24.png"
+              alt=""
+            />
+          </div>
+          <p class="description">
+            Hydrate is a collaboration of Filipino and American creative
+            designers. It is proudly a Filipino-American brand.
+          </p>
+        </div>
+        <div class="accordion-content">
+          <div class="accordion-header">
+            <span class="title"
+              >4. Why is Hydrate cheaper than other local and international
+              brands?</span
+            >
+            <img
+              class="image"
+              src="../../assets/icons/icons8-triangle-24.png"
+              alt=""
+            />
+          </div>
+          <p class="description">
+            Hydrate is cheaper and more affordable that other brands because of
+            the straight pricing from our manufacturer. We reduce other
+            non-essential costs of dealers, distributors and costly
+            marketing/advertising expense.
+          </p>
+        </div>
+        <div class="accordion-content">
+          <div class="accordion-header">
+            <span class="title">5. How is the quality of Hydrate?</span>
+            <img
+              class="image"
+              src="../../assets/icons/icons8-triangle-24.png"
+              alt=""
+            />
+          </div>
+          <p class="description">
+            Hydrate bottles are made of the same high quality material with that
+            of other brands. It passed through global quality standards of
+            vacuum flasks.
+          </p>
+        </div>
+        <div class="accordion-content">
+          <div class="accordion-header">
+            <span class="title"
+              >6. Does Hydrate have a warranty and what is the coverage?</span
+            >
+            <img
+              class="image"
+              src="../../assets/icons/icons8-triangle-24.png"
+              alt=""
+            />
+          </div>
+          <p class="description">
+            Hydrate has a 1 YEAR LIMITED WARRANTY. The coverage of Hydrate’s 1
+            year limited warranty are factory defects such as broken or leaking
+            caps, bottles that seem to have lost their insulating properties,
+            rattling sounds, etc. Occurrences of wear and tear such as bumps and
+            scratches are not covered by the warranty.
+          </p>
+        </div>
+        <div class="accordion-content">
+          <div class="accordion-header">
+            <span class="title">7. Why is there condensation in my flask?</span>
+            <img
+              class="image"
+              src="../../assets/icons/icons8-triangle-24.png"
+              alt=""
+            />
+          </div>
+          <p class="description">
+            Condensation usually happens on the upper part where the cap/lid is
+            located. This is normal because the cap is made of thermoplastic
+            material. As far as product development goes, the double wall
+            insulation technology can only be done to the actual tumbler that
+            holds the liquid. Rest assure, this will not affect the temperature
+            inside the flask. If condensation occurs on the actual flask, do let
+            us know and we will assist you on this matter.
+          </p>
+        </div>
+        <div class="accordion-content">
+          <div class="accordion-header">
+            <span class="title"
+              >8. Why does my cold/hot water not last long for 24/12
+              hours?</span
+            >
+            <img
+              class="image"
+              src="../../assets/icons/icons8-triangle-24.png"
+              alt=""
+            />
+          </div>
+          <p class="description">
+            When there is no moisture or condensation on the actual flask but
+            the liquid does not last retain its cold or hot temperature, these
+            are factors to consider:
+            <br />
+            <br />
+            a. Temperature of liquid poured into the flask.
+            <br />
+            <br />
+            b. How often the flask lid is removed/opened.
+          </p>
+        </div>
+        <div class="accordion-content">
+          <div class="accordion-header">
+            <span class="title">9. Does Hydrate have a physical store?</span>
+            <img
+              class="image"
+              src="../../assets/icons/icons8-triangle-24.png"
+              alt=""
+            />
+          </div>
+          <p class="description">
+            No, please refer to this website listed in our FB and IG accounts.
+          </p>
+        </div>
+      </div>
+    </main>
+    <component-footer> </component-footer>
+    <script src="../../layouts/header/header-component.js"></script>
+    <script src="../../layouts/footer/footer-component.js"></script>
+    <script>
+      const accordionContent = document.querySelectorAll(".accordion-content");
+
+      accordionContent.forEach((item, index) => {
+        let accordionHeader = item.querySelector(".accordion-header");
+
+        accordionHeader.addEventListener("click", () => {
+          item.classList.toggle("open");
+
+          let accordionDescription = item.querySelector(".description");
+
+          if (item.classList.contains("open")) {
+            accordionDescription.style.height = `${accordionDescription.scrollHeight}px`;
+            item.querySelector(".image").style.transform = "rotate(180deg)";
+          } else {
+            accordionDescription.style.height = "0px";
+            item.querySelector(".image").style.transform = "rotate(0deg)";
+          }
+          removeOpen(index);
+        });
+      });
+
+      function removeOpen(index1) {
+        accordionContent.forEach((item2, index2) => {
+          if (index1 != index2) {
+            item2.classList.remove("open");
+            item2.querySelector(".description").style.height = "0px";
+            item2.querySelector(".image").style.transform = "rotate(0deg)";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

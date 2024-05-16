@@ -1,0 +1,136 @@
+.add-product {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: top;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.add-product .product-details1 {
+  height: 100%;
+  width: 48%;
+  box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.add-product .product-details1 p {
+  font-size: 0.8rem;
+  margin: 0.8rem 0rem;
+}
+
+.add-product .product-details1 label {
+  font-size: 1rem;
+  margin: 0.6rem 0rem;
+}
+
+.add-product .product-details1 input {
+  width: 100%;
+  box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.12);
+  height: 3rem;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.add-product .product-details1 select {
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+  padding: 0.8rem;
+  box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+}
+
+.add-product .product-details1 textarea {
+  width: 100%;
+  box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.12);
+  height: 10rem;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.add-product .product-details2 {
+  height: 100%;
+  width: 50%;
+  box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-details2 .product-image {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.product-details2 .product-image img {
+  height: 200px;
+  width: 150px;
+  box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+}
+
+.product-details2 .input-file {
+  height: 200px;
+  width: 150px;
+  box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.product-details2 p {
+  font-size: 0.8rem;
+  margin: 0.8rem 0rem;
+}
+
+.product-details2 label {
+  font-size: 1rem;
+  margin: 0.6rem 0rem;
+}
+
+.product-details2 input {
+  width: 100%;
+  box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.12);
+  height: 3rem;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.product-details2 select {
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+  padding: 0.8rem;
+  box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+}
+
+.product-details2 .product-buttons {
+  display: flex;
+  padding: 2rem 1rem 0rem 1rem;
+  gap: 2rem;
+}
+
+.product-details2 .product-buttons button {
+  width: 7rem;
+  height: 2.4rem;
+  box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  padding: 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.product-details2 .product-buttons button:hover {
+  background-color: rgb(109, 109, 109);
+  border: none;
+  color: white;
+}

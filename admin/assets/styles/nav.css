@@ -1,0 +1,194 @@
+* {
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+.hovered {
+  margin-left: 300px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  background-color: #f0f8ff;
+  width: 90px;
+  overflow: hidden;
+  transition: width 100ms linear;
+  box-shadow: 0 10px 25px rgba(161, 161, 161, 0.15);
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.logo {
+  text-align: center;
+  display: flex;
+  transition: all 0.5s ease;
+  margin: 10px 0 6px 16px;
+  padding: 14px 10px;
+}
+
+.logo img {
+  width: 46px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  mix-blend-mode: darken;
+}
+
+.logo span {
+  font-weight: 400;
+  padding-left: 18px;
+  font-size: 18px;
+  font-family: "Sulphur", "Helvetica Neue", Helvetica, Arial, sans-;
+}
+
+.row {
+  position: relative;
+  color: black;
+  font-size: 14px;
+  display: table;
+  width: 300px;
+  padding: 14px 10px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.fas {
+  width: 26px;
+  height: 26px;
+  top: 10px;
+  font-size: 20px;
+  text-align: center;
+  object-fit: contain;
+  margin-left: 20px;
+}
+
+.nav-item {
+  top: 12px;
+  margin-left: 10px;
+  display: none;
+  transition: all 0.5s ease;
+}
+
+.row:hover {
+  background-color: #cdcdcd;
+}
+
+nav:hover {
+  width: 280px;
+  transition: all 0.5s ease;
+}
+
+nav:hover .nav-item {
+  display: block;
+  width: 140px;
+}
+
+.nav-header {
+  display: none;
+  margin: 10px 10px;
+  transition: all 0.5s ease;
+  font-size: 12px;
+  font-weight: 600;
+  color: #b0b0b0;
+  margin-left: 25px;
+}
+
+nav:hover .nav-header {
+  display: block;
+}
+
+.nav-title {
+  margin-left: 10px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  color: black;
+  font-size: 22px !important;
+  font-weight: 500 !important;
+}
+
+.media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  flex-wrap: wrap;
+}
+
+.media-logo {
+  width: 28px;
+  aspect-ratio: 1;
+  margin-left: 10px;
+  margin-right: 13px;
+  margin-top: 12px;
+  object-fit: contain;
+}
+
+nav:hover .media {
+  width: 250px;
+}
+
+.arrow {
+  display: none;
+  justify-content: end;
+  align-items: center;
+  height: 18px;
+  width: 18px;
+  rotate: 90deg;
+  transition: all 0.2s ease;
+}
+
+nav:hover .arrow {
+  display: flex;
+}
+
+nav:hover .active .arrow {
+  transform: rotate(-180deg);
+}
+
+nav:not(:hover) .sub-menu {
+  display: none;
+}
+
+nav .sub-menu {
+  padding: 6px 6px 14px 80px;
+  margin-top: -10px;
+  background-color: #fafafa;
+  list-style: none;
+  display: none;
+  transition: all 0.5s ease;
+}
+
+nav .sub-menu img {
+  width: 8px;
+  rotate: 45deg;
+}
+
+nav .sub-menu span {
+  font-size: 13px;
+  font-weight: 400;
+  margin: 10px;
+}
+
+nav .sub-menu li {
+  padding: 12px;
+  transition: all 0.5s ease;
+}
+
+nav .sub-menu li a {
+  color: black;
+  font-size: 14px;
+  font-weight: 700;
+  margin-left: 10px;
+  transition: all 0.5s ease;
+}
+
+.active .sub-menu {
+  display: block;
+}

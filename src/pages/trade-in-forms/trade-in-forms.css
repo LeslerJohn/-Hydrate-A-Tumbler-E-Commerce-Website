@@ -1,0 +1,66 @@
+body {
+  padding-top: 120px !important;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+}
+
+.con {
+  display: flex;
+  align-items: start;
+}
+
+main > h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+main > p {
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 36px;
+}
+
+.recycle-info {
+  padding-bottom: 40px;
+  border-bottom: 2px solid #e4e4e4;
+  margin-bottom: 20px;
+}
+
+.recycle-info > h3 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.recycle-info > p {
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 30px;
+  width: 600px;
+}
+
+.recycle-info > button {
+  width: 200px;
+  height: 40px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  border: none;
+  color: white;
+  background-color: rgb(31, 31, 31);
+  transition: all 0.3s ease;
+}
+
+.recycle-info > button:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.aside-nav nav ul li:nth-child(5) {
+  border-left: 4px solid #000;
+}

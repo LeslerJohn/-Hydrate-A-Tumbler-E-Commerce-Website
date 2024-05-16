@@ -1,0 +1,573 @@
+.middle-header ul li:nth-child(1) a {
+  border-bottom: 2px solid black;
+}
+
+.slider {
+  width: 100dvw;
+  height: 100dvh;
+  aspect-ratio: 16/9;
+  position: relative;
+  overflow: hidden;
+}
+
+.list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: flex;
+  width: max-content;
+  transition: all 0.5s ease-in-out;
+}
+
+.list img {
+  width: 100dvw;
+  height: 100dvh;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  background-position: center;
+}
+
+.slider-buttons {
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slider-buttons button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff5;
+  color: white;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.dots {
+  position: absolute;
+  bottom: 30px;
+  color: #fff;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.dots li {
+  list-style: none;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  margin: 20px;
+  border-radius: 20px;
+  transition: all 1s ease;
+}
+
+.dots li.active {
+  width: 30px;
+}
+
+/* @media screen and (max-width: 1700px) and (min-width: 1300px) {
+  .slider {
+    height: 100dvh;
+    aspect-ratio: 16/9;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+  .slider {
+    height: 80dvh;
+    aspect-ratio: 16/9;
+  }
+} */
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .slider {
+    height: 60dvh;
+    aspect-ratio: 16/9;
+  }
+  .list img {
+    width: 100dvw;
+    height: 60dvh;
+  }
+  .dots {
+    bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slider {
+    height: 40dvh;
+    aspect-ratio: 16/9;
+  }
+  .list img {
+    width: 100dvw;
+    height: 40dvh;
+  }
+  .dots {
+    bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .slider {
+    height: 30dvh;
+    aspect-ratio: 16/9;
+  }
+  .list img {
+    width: 100dvw;
+    height: 30dvh;
+  }
+  .dots {
+    bottom: 0px;
+  }
+}
+
+.hero2 {
+  height: 100%;
+  padding-bottom: 2rem;
+}
+
+.shot1 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.shot1 img {
+  height: 7rem;
+  aspect-ratio: 1;
+  mix-blend-mode: color-burn;
+  object-fit: contain;
+}
+
+.line {
+  flex-direction: column;
+}
+
+.dot-line-break {
+  width: 100%;
+  border: 1px dashed rgb(137, 137, 137);
+}
+
+.shot2 {
+  margin-top: 2rem;
+  width: 100%;
+  padding: 1rem;
+  height: 100%;
+}
+
+.categories-images {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.shot3 {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 4rem;
+  height: 100%;
+}
+
+.shot3 a {
+  color: black;
+}
+
+.shot4 {
+  display: flex;
+  height: 100%;
+}
+
+.categories {
+  display: block;
+  width: 16rem;
+  height: 100%;
+}
+
+.categories input {
+  margin: 1rem;
+  width: 1rem;
+  aspect-ratio: 1;
+}
+
+.shot4 img {
+  width: 12rem;
+  aspect-ratio: 0.9;
+}
+
+.shot4 p {
+  margin-top: 0.3rem;
+  font-size: 0.8rem;
+  color: gray;
+  padding: 0.5rem;
+  width: 12rem;
+  text-align: center;
+}
+
+.about {
+  height: 860px;
+  width: 100%;
+  display: flex;
+  padding: 5rem 2rem;
+  background-color: #fafafa;
+}
+
+.about1 {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-image {
+  width: 40%;
+  aspect-ratio: 1;
+  margin: 0rem 3rem;
+  object-fit: contain;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.about-image img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: contain;
+  transition: all 0.6s ease-in-out;
+}
+
+.about-image:hover img {
+  opacity: 0.6;
+}
+
+.about-details {
+  width: 30%;
+  padding: 1rem;
+  height: 100%;
+}
+
+.about-details p {
+  margin-bottom: 2rem;
+}
+
+.about-details h2 {
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.about-details a {
+  color: black;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.about2 {
+  width: 80%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  line-height: 1.4rem;
+}
+
+.about2 h2 {
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.products {
+  margin-top: 6rem;
+  /* background-color: #f3f4f6; */
+}
+
+.products-title {
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.products-title p {
+  font-size: 1.4rem;
+}
+
+.products-title a {
+  color: black;
+}
+
+.products-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  gap: 2rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.feedback {
+  height: 100%;
+  margin-top: 90px;
+}
+
+.feedback-title {
+  font-size: 2.2rem;
+  font-weight: 300;
+  color: black;
+  padding: 0.5rem 0.7rem;
+}
+
+.customers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 2rem 0rem;
+}
+
+.message {
+  width: 320px;
+  border: 1px solid rgb(238, 238, 238);
+  padding: 1.5rem;
+}
+
+.feedback-profile {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 1rem 0.2rem;
+}
+
+.feedback-profile img {
+  width: 40px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.customer-name {
+  padding-left: 12px;
+  color: #900d0d;
+}
+
+@media only screen and (max-width: 768px) {
+  .shot1 img {
+    height: 6rem;
+  }
+  .shot1 p {
+    font-size: 0.8rem;
+  }
+  .shot3 {
+    padding-bottom: 2rem;
+  }
+  .shot4 img {
+    width: 8rem;
+    aspect-ratio: 1;
+  }
+  .shot4 .categories {
+    width: 14rem;
+  }
+  .shot4 .categories-images {
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .shot4 .categories-images div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .about {
+    width: 100%;
+    padding: 2rem 0;
+  }
+  .about-details {
+    width: 21rem;
+  }
+  .products .card {
+    width: 220px;
+    height: 350px;
+  }
+  .feedback {
+    height: 450px;
+  }
+  .feedback .customers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .hero2 {
+    height: 100%;
+  }
+  .shot1 img {
+    height: 4rem;
+  }
+  .shot1 p {
+    font-size: 0.6rem;
+  }
+  .shot2 {
+    padding: 0 0 4rem 0;
+  }
+  .shot3 {
+    padding-bottom: 1rem;
+  }
+  .shot4 img {
+    width: 6rem;
+    aspect-ratio: 1;
+  }
+  .shot4 .categories {
+    width: 10rem;
+  }
+  .shot4 .categories label,
+  .categories h5 {
+    font-size: 0.8rem;
+  }
+  .shot4 .categories-images {
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .shot4 .categories-images div {
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .about {
+    width: 100%;
+    height: 100%;
+    padding: 2rem 0;
+  }
+
+  .about1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-details {
+    width: 100%;
+    height: 330px;
+    text-align: center;
+  }
+
+  .about-image {
+    width: 60%;
+  }
+
+  .feedback {
+    height: 100%;
+  }
+  .feedback-title {
+    font-size: 1.2rem;
+  }
+  .customers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 2rem 0rem;
+  }
+  .feedback .message {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 500px) and (min-width: 200px) {
+  * {
+    scrollbar-width: 0;
+  }
+  html {
+    width: 100%;
+  }
+  .header {
+    padding: 0;
+  }
+  .container {
+    padding: 0 12px;
+  }
+  .head-con {
+    padding: 0;
+  }
+  .header .logo {
+    width: 22px;
+    aspect-ratio: 1;
+  }
+  .header .title {
+    font-size: 1.2rem;
+  }
+  .header .buttons {
+    width: 18px;
+    aspect-ratio: 1;
+    object-fit: contain;
+  }
+  .right-header button {
+    width: 32px;
+  }
+  .hero2 {
+    height: 100%;
+  }
+  .hero2 img {
+    width: 32px;
+    aspect-ratio: 1;
+  }
+  .shot1 {
+    padding: 0;
+  }
+  .line {
+    height: 100%;
+  }
+  .about {
+    height: 100%;
+    padding: 0;
+    gap: 2rem;
+    padding-top: 1rem;
+  }
+  .about1 {
+    height: 100%;
+  }
+  .about2 {
+    height: 100%;
+  }
+  .about2 h2 {
+    height: 100%;
+    line-height: 1.2;
+  }
+  .about-details {
+    height: 100%;
+  }
+  .customers {
+    flex: 2;
+  }
+  .message {
+    padding: 8px;
+  }
+  .message p {
+    font-size: 0.6rem;
+  }
+}

@@ -1,0 +1,209 @@
+.details {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.items {
+  width: 100%;
+  height: 280px;
+  box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  padding: 1rem;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.item-head {
+  width: 100%;
+  display: flex;
+  align-items: top;
+  justify-content: space-between;
+  font-size: 0.8rem;
+}
+
+.item-head span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-head img {
+  width: 14px;
+  aspect-ratio: 1;
+  margin-left: 0.4rem;
+  rotate: 90deg;
+}
+
+.details table {
+  width: 100%;
+  height: 100%;
+  margin-top: 1rem;
+  border-spacing: 6px;
+}
+
+.details table thead {
+  border-radius: 8px;
+  padding: 0.5rem;
+  height: 1.4rem;
+  border: 1px solid black;
+}
+
+.details table thead th {
+  text-align: start;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.details table tbody td {
+  font-size: 0.8rem;
+  object-fit: contain;
+  padding: 0;
+  width: 120px;
+}
+
+.details table .product {
+  width: 260px;
+  display: flex;
+  align-items: center;
+}
+
+.details table .product p {
+  margin-left: 12px;
+}
+
+.product img {
+  width: 46px;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.left {
+  display: block;
+  width: 60%;
+}
+
+.price {
+  width: 100%;
+  height: 210px;
+  box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.price div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid black;
+}
+
+.price h3 {
+  font-size: 0.9rem;
+  font-weight: 350;
+  margin-bottom: 0.3rem;
+}
+
+.price .price-head {
+  font-size: 0.7rem;
+  border-bottom: none;
+}
+
+.price .price-total h3:nth-child(1) {
+  color: rgb(158, 158, 158);
+}
+
+.price .price-total h3:nth-child(2) {
+  color: rgb(223, 31, 31);
+}
+
+.right {
+  display: block;
+  width: 35%;
+}
+
+.summary {
+  width: 100%;
+  height: 120px;
+  box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.summary div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.5rem 0rem;
+}
+
+.summary > p {
+  font-size: 0.8rem;
+  font-weight: 350;
+}
+
+.summary div p {
+  font-size: 0.8rem;
+  font-weight: 450;
+}
+
+.address {
+  width: 100%;
+  height: 90px;
+  box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.address p {
+  font-size: 0.8rem;
+  font-weight: 450;
+  margin-bottom: 0.4rem;
+}
+
+.payment-method {
+  width: 100%;
+  height: 120px;
+  box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.payment-method p {
+  font-size: 0.8rem;
+  font-weight: 450;
+  margin-bottom: 0.4rem;
+}
+
+.date-delivery {
+  width: 100%;
+  height: 125px;
+  box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.date-delivery p {
+  font-size: 0.8rem;
+  font-weight: 450;
+  margin-bottom: 0.4rem;
+}
+
+.date-delivery button {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 450;
+  background-color: rgb(31, 31, 31);
+  color: white;
+  margin-top: 12px;
+}

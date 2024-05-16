@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../assets/styles/global.css">
+    <link rel="stylesheet" href="../../assets/styles/header.css">
+    <link rel="stylesheet" href="../../assets/styles/nav.css">
+    <link rel="stylesheet" href="orderDetails.css">
+</head>
+<body>
+    <admin-navigation-component></admin-navigation-component>
+    <main>
+        <section class="title">
+            <h2>Order #123456789</h2>
+            <div class="path">
+                <p>Dashboard</p>
+                <img src="../../assets/icons/icons8-arrow-30.png" alt="">
+                <p>Order</p>
+                <img src="../../assets/icons/icons8-arrow-30.png" alt="">
+                <p>Order Details</p>
+            </div>
+        </section>
+        <section class="details">
+            <div class="left">
+                <div class="items">
+                    <div class="item-head">
+                        <p>All Items</p>
+                        <span>Sort <img src="../../assets/icons/icons8-arrow-30.png" alt=""></span>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="product"><img src="../../assets/images/7637.jpg" alt=""><p>Product name</p></td>
+                                <td>PHP699</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td class="product"><img src="../../assets/images/7637.jpg" alt=""><p>Product name</p></td>
+                                <td>PHP699</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td class="product"><img src="../../assets/images/7637.jpg" alt=""><p>Product name</p></td>
+                                <td>PHP699</td>
+                                <td>1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="price">
+                    <div class="price-head">
+                        <p>Cart Totals</p>
+                        <p>Price</p>
+                    </div>
+                    <div>
+                        <h3>Subtotal:</h3>
+                        <h3>10,982</h3>
+                    </div>
+                    <div>
+                        <h3>Shipping:</h3>
+                        <h3>125</h3>
+                    </div>
+                    <div>
+                        <h3>TAX:</h3>
+                        <h3>12</h3>
+                    </div>
+                    <div class="price-total">
+                        <h3>Total price:</h3>
+                        <h3>12,107</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="summary">
+                    <p>Summary</p>
+                    <div>
+                        <p>Order ID</p>
+                        <p>#123456789</p>
+                    </div>
+                    <div>
+                        <p>Date</p>
+                        <p>12, Nov 2023</p>
+                    </div>
+                    <div>
+                        <p>Total</p>
+                        <p>PHP 12,107</p>
+                    </div>
+                </div>
+                <div class="address">
+                    <p>Shipping Address</p>
+                    <p>C-1784 Dona Benita Drive Canelar, Zamboanga City 7000</p>
+                </div>
+                <div class="payment-method">
+                    <p>Payment Method</p>
+                    <p>Pay on Delivery (Cash/Card). Cash on delivery (COD) available. Card/Net banking acceptance subject to device availability.</p>
+                </div>
+                <div class="date-delivery">
+                    <p>Expected Date of Delivery</p>
+                    <p>12, Dec 2023</p>
+                    <button>Track Order</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="../../layouts/navigation/nav.js"></script>
+</body>
+</html>

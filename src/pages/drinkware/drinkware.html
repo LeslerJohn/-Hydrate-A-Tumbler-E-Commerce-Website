@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drinkware</title>
+    <link rel="icon" href="../../assets/icons/LOGO.png" />
+    <link rel="stylesheet" href="../../assets/styles/global.css" />
+    <link rel="stylesheet" href="../../assets/styles/header.css" />
+    <link rel="stylesheet" href="../../assets/styles/footer.css" />
+    <link rel="stylesheet" href="../../assets/styles/card-product.css" />
+    <link rel="stylesheet" href="drinkware.css" />
+  </head>
+  <body>
+    <component-header> </component-header>
+    <main>
+      <section class="hero"></section>
+      <div class="container">
+        <section class="drinkware">
+          <div class="filter">
+            <ul>
+              <li class="menu">
+                <div class="row">
+                  <span class="nav-item">Color</span>
+                  <img
+                    class="fas arrow"
+                    src="../../assets/icons/icons8-arrow-30.png"
+                    alt=""
+                  />
+                </div>
+                <ul class="sub-menu">
+                  <li>
+                    <input type="checkbox" name="" id="" />
+                    <label for="">White</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="" id="" />
+                    <label for="">Ice Blue</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="" id="" />
+                    <label for="">Pink</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="" id="" />
+                    <label for="">Snow</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="" id="" />
+                    <label for="">Summer</label>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu">
+                <div class="row">
+                  <span class="nav-item">Collection</span>
+                  <img
+                    class="fas arrow"
+                    src="../../assets/icons/icons8-arrow-30.png"
+                    alt=""
+                  />
+                </div>
+                <ul class="sub-menu">
+                  <li>
+                    <input type="checkbox" name="" id="" />
+                    <label for="">Starwars</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="" id="" />
+                    <label for="">Disney</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="" id="" />
+                    <label for="">Marvel</label>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu">
+                <div class="row">
+                  <span class="nav-item">Sizes</span>
+                  <img
+                    class="fas arrow"
+                    src="../../assets/icons/icons8-arrow-30.png"
+                    alt=""
+                  />
+                </div>
+                <ul class="sub-menu">
+                  <li>
+                    <input type="checkbox" name="" id="" />
+                    <label for="">16oz</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="" id="" />
+                    <label for="">20oz</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="" id="" />
+                    <label for="">32oz</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="" id="" />
+                    <label for="">40oz</label>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu">
+                <div class="row">
+                  <span class="nav-item">Drinks</span>
+                  <img
+                    class="fas arrow"
+                    src="../../assets/icons/icons8-arrow-30.png"
+                    alt=""
+                  />
+                </div>
+                <ul class="sub-menu">
+                  <li>
+                    <input type="checkbox" name="" id="" />
+                    <label for="">Tea</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="" id="" />
+                    <label for="">Water</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="" id="" />
+                    <label for="">Coffee</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="" id="" />
+                    <label for="">Shake</label>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu">
+                <div class="row">
+                  <span class="nav-item">Attributes</span>
+                  <img
+                    class="fas arrow"
+                    src="../../assets/icons/icons8-arrow-30.png"
+                    alt=""
+                  />
+                </div>
+                <ul class="sub-menu">
+                  <li>
+                    <input type="checkbox" name="" id="" />
+                    <label for="">Cold</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="" id="" />
+                    <label for="">Hot</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="" id="" />
+                    <label for="">Durable</label>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="drinkware-products">
+            <h1>Products</h1>
+            <div class="products-container">
+              <component-card></component-card>
+              <component-card></component-card>
+              <component-card></component-card>
+              <component-card></component-card>
+              <component-card></component-card>
+              <component-card></component-card>
+              <component-card></component-card>
+              <component-card></component-card>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <component-footer></component-footer>
+    <script src="../../layouts/header/header-component.js"></script>
+    <script src="../../layouts/footer/footer-component.js"></script>
+    <script src="../../components/cards/card-product.js"></script>
+    <script>
+      let menus = document.querySelectorAll(".menu");
+      menus.forEach((menu) => {
+        menu.addEventListener("click", (event) => {
+          if (!event.target.closest(".sub-menu")) {
+            menu.classList.toggle("active");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="icon" href="../../assets/icons/LOGO.png" />
+    <link rel="stylesheet" href="../../assets/styles/global.css">
+    <link rel="stylesheet" href="../../assets/styles/header.css">
+    <link rel="stylesheet" href="../../assets/styles/footer.css">
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <component-header> </component-header>
+    <main>
+        <div class="container con">
+            <section class="cart-products">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="product"><img src="../../assets/images/7637.jpg" alt=""><p>Product name</p></td>
+                            <td>&#8369 699</td>
+                            <td>1</td>
+                            <td>&#8369 699</td>
+                        </tr>
+                        <tr>
+                            <td class="product"><img src="../../assets/images/7637.jpg" alt=""><p>Product name</p></td>
+                            <td>&#8369 699</td>
+                            <td>1</td>
+                            <td>&#8369 699</td>
+                        </tr>
+                        <tr>
+                            <td class="product"><img src="../../assets/images/7637.jpg" alt=""><p>Product name</p></td>
+                            <td>&#8369 699</td>
+                            <td>1</td>
+                            <td>&#8369 699</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td><button>Update cart</button></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+            <section class="shipping">
+                <h2>Cart Totals</h2>
+                <div class="subtotal"><h3>Subtotal:</h3><p>&#8369 599</p></div>
+                <div class="shipping-details"><h3>Shipping:</h3><div class="address"><p>There are no shipping method available. Please double check your address, or contact us if you need any help.</p>
+                    <div class="book-items">
+                        <div class="address-book-item">
+                          <h6>Billing Address 1</h6>
+                          <p>You have not set a default billing address</p>
+                          <a href="">Edit Adress</a>
+                        </div>
+                        <div class="address-book-item">
+                          <h6>Billing Address 2</h6>
+                          <p>You have not set a default billing address</p>
+                          <a href="">Edit Adress</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="total">
+                <h3>Total:</h3>
+                <p>&#8369 639</p>
+            </div>
+            <button>Proceed to checkout</button>
+            </section>
+        </div>
+
+    </main>
+
+    <component-footer></component-footer>
+    <script src="../../layouts/header/header-component.js"></script>
+    <script src="../../layouts/footer/footer-component.js"></script>
+</body>
+</html>

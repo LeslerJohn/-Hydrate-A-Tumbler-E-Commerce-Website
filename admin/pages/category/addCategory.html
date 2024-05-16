@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../assets/styles/global.css">
+    <link rel="stylesheet" href="../../assets/styles/header.css">
+    <link rel="stylesheet" href="../../assets/styles/nav.css">
+    <link rel="stylesheet" href="addCategory.css">
+</head>
+<body>
+    <admin-navigation-component></admin-navigation-component>
+    <main>
+        <section class="title">
+            <h2>Add Category</h2>
+            <div class="path">
+                <p>Dashboard</p>
+                <img src="../../assets/icons/icons8-arrow-30.png" alt="">
+                <p>Category</p>
+                <img src="../../assets/icons/icons8-arrow-30.png" alt="">
+                <p>Add Category</p>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <form action="">
+                    <div class="categoryName">
+                        <label for="category">Category:</label>
+                        <input type="text" name="category" id="category" placeholder="Category">
+                    </div>
+                    <div class="description">
+                        <label for="description">Description:</label>
+                        <textarea name="description" id="description" cols="2" rows="4" placeholder="Description"></textarea>
+                    </div>
+                    <div class="addProduct">
+                        <label for="addProduct">Add Product:</label>
+                        <select multiple name="product" id="product">
+                            <option value="" class="product1">Product1</option>
+                            <option value="" class="product2">Product2</option>
+                            <option value="" class="product3">Product3</option>
+                            <option value="" class="product4">Product4</option>
+                            <option value="" class="product5">Product5</option>
+                            <option value="" class="product6">Product6</option>
+                            <option value="" class="product7">Product7</option>
+                            <option value="" class="product8">Product8</option>
+                            <option value="" class="product9">Product9</option>
+                            <option value="" class="product10">Product10</option>
+                        </select>
+                    </div>
+                    <button class="save-button">Save</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="../../layouts/navigation/nav.js"></script>
+</body>
+</html>

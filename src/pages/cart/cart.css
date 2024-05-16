@@ -1,0 +1,176 @@
+main {
+  padding-top: 120px !important;
+}
+
+.con {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  gap: 2rem;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 800px;
+  word-wrap: break-word;
+  table-layout: auto;
+}
+
+table tbody img {
+  width: 120px;
+  aspect-ratio: 1;
+}
+
+table thead tr th,
+table tbody tr td,
+table tfoot td {
+  padding: 1rem;
+}
+
+table thead tr th {
+  text-align: start;
+}
+
+table tbody tr {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+table .product {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+table .product p {
+  padding-left: 1rem;
+  font-size: 1.2rem;
+}
+
+table tfoot td button {
+  width: 120px;
+  padding: 0.8rem 1rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 13px;
+  color: white;
+  background-color: black;
+  transition: all 0.3s ease;
+}
+
+table tfoot td button:hover {
+  background-color: #fff;
+  color: black;
+  border: 1px solid rgb(42, 42, 42);
+}
+
+.shipping {
+  width: 510px;
+  border: 1px solid #ccc;
+  padding: 1rem;
+}
+
+.shipping h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.shipping-details {
+  width: 400px;
+}
+
+.subtotal,
+.shipping-details,
+.total {
+  display: flex;
+  align-items: start;
+  margin-bottom: 2rem;
+}
+
+.shipping-details {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.shipping-details .address {
+  width: 100%;
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.subtotal h3,
+.shipping-details h3,
+.total h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  width: 150px;
+}
+
+.shipping-details p {
+  text-wrap: wrap;
+  font-size: 0.8rem;
+  font-weight: 300;
+  padding-bottom: 0.7rem;
+}
+
+.book-items {
+  display: flex;
+  align-items: start;
+}
+
+.address-book-item {
+  display: flex;
+  align-items: start;
+  margin-bottom: 6px;
+  padding: 8px;
+  border-top: 4px solid black;
+  box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.15);
+  flex-direction: column;
+  margin-right: 14px;
+}
+
+.address-book-item h6 {
+  font-size: 11px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.address-book-item p {
+  font-size: 10px;
+  font-weight: 300;
+  margin-bottom: 0px;
+}
+
+.address-book-item a {
+  font-size: 10px;
+  font-weight: 600;
+  color: black;
+  cursor: pointer;
+}
+
+.shipping button {
+  width: 180px;
+  padding: 0.8rem 1rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 13px;
+  color: white;
+  margin-top: 2rem;
+  cursor: pointer;
+  background-color: black;
+  transition: all 0.3s ease;
+}
+
+.shipping button:hover {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(48, 48, 48);
+  color: black;
+}

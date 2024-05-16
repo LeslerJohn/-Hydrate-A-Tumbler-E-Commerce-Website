@@ -1,0 +1,161 @@
+body {
+  padding-top: 120px !important;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+}
+
+.con {
+  display: flex;
+  align-items: start;
+}
+
+main > h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+main > h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.contact-info {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  margin-bottom: 60px;
+}
+
+.contact-info > h5 {
+  font-size: 16px;
+  font-weight: 600;
+  width: 350px;
+  margin-bottom: 8px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid black;
+}
+
+.contact-info .contact-info-item {
+  display: flex;
+  align-items: start;
+}
+
+.contact-info-item .contact-info-item-label {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.contact-info-item .contact-info-item-value {
+  font-size: 14px;
+  font-weight: 300;
+  margin-left: 6px;
+}
+
+.contact-info .edit {
+  margin-top: 16px;
+}
+
+.contact-info .edit a {
+  font-size: 14px;
+  font-weight: 500;
+  color: black;
+  cursor: pointer;
+  margin-right: 6px;
+}
+
+.contact-info .edit a:nth-child(2) {
+  margin-left: 6px;
+}
+
+.recent-orders {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  margin-bottom: 60px;
+}
+
+.recent-orders > h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.recent-orders .recent-orders-item {
+  display: flex;
+  align-items: start;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.address-book {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  margin-bottom: 60px;
+}
+
+.address-book .book-title {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 30px;
+}
+
+.address-book .book-title h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-right: 30px;
+}
+
+.address-book .book-title a {
+  font-size: 12px;
+  font-weight: 600;
+  color: black;
+  cursor: pointer;
+  margin-right: 30px;
+}
+
+.book-items {
+  display: flex;
+  align-items: start;
+}
+
+.address-book .address-book-item {
+  display: flex;
+  align-items: start;
+  margin-bottom: 6px;
+  padding: 20px;
+  border-top: 4px solid black;
+  box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.15);
+  flex-direction: column;
+  margin-right: 14px;
+}
+
+.address-book-item h6 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.address-book-item p {
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.address-book-item a {
+  font-size: 12px;
+  font-weight: 600;
+  color: black;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.aside-nav nav ul li:nth-child(1) {
+  border-left: 4px solid #000;
+}

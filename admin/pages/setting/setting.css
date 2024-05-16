@@ -1,0 +1,152 @@
+.settings {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.info-container {
+  width: 55%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.12);
+}
+
+.info-container h5 {
+  font-size: 20px;
+  font-weight: 500;
+  width: 100%;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #e4e4e4;
+}
+
+.info-container form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+}
+
+.info-container form label {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.info-container form input {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  background-color: #cce2eb;
+  outline: none;
+  border-radius: 6px;
+}
+
+.info-container textarea {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  background-color: #cce2eb;
+  outline: none;
+  border-radius: 6px;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cancel {
+  padding: 0.7rem 1.3rem;
+  border-radius: 6px;
+  border: 1px solid rgb(223, 223, 223);
+  background-color: transparent;
+}
+
+.save {
+  padding: 0.7rem 1.3rem;
+  border-radius: 6px;
+  color: white;
+  background-color: rgb(15, 121, 234);
+}
+
+.photo-container {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.12);
+}
+
+.photo-container h5 {
+  font-size: 20px;
+  font-weight: 500;
+  width: 100%;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #e4e4e4;
+}
+
+.photo .photo-setting {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  width: 100%;
+}
+
+.photo-container .photo {
+  display: flex;
+  width: 100%;
+  height: 3rem;
+  align-items: center;
+}
+
+.photo-container .photo img {
+  width: 46px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.photo-setting p {
+  font-size: 14px;
+  padding-bottom: 6px;
+}
+
+.del {
+  background-color: transparent;
+  color: gray;
+  padding-right: 12px;
+  font-size: 12px;
+}
+
+.upd {
+  background-color: transparent;
+  color: rgb(19, 94, 233);
+  padding-right: 12px;
+  font-size: 12px;
+}
+
+.photo-container input {
+  width: 100%;
+  height: 8rem;
+  background-color: #c8d7ed;
+  border-radius: 12px;
+  padding: 1rem;
+  border: 1px dashed #1468e6;
+}

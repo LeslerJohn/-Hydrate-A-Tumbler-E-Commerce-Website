@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "Inter";
+  src: url(../fonts/Inter-VariableFont.ttf);
+}
+
+@font-face {
+  font-family: "Sulphur";
+  src: url(../fonts/SulphurPoint-Bold.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+}
+
+body {
+  font-family: "Inter", "Helvetica Neue", "Helvetica";
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.container {
+  display: flex;
+  max-width: 1380px;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+body:not(component-header):not(component-footer) {
+  animation: transitionIn 0.75s;
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

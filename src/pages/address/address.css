@@ -1,0 +1,122 @@
+body {
+  padding-top: 120px !important;
+  background-color: #f3f4f6;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+}
+
+.con {
+  display: flex;
+  align-items: start;
+}
+
+main > h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.entryarea {
+  position: relative;
+  height: 40px;
+  line-height: 40px;
+  margin: 16px 0;
+}
+
+.input-container {
+  width: 100%;
+  display: flex;
+  gap: 3rem;
+}
+
+.entryarea input {
+  position: absolute;
+  width: 100%;
+  outline: none;
+  font-size: 0.8rem;
+  padding: 0px 16px;
+  line-height: 40px;
+  border-radius: 8px;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: transparent;
+  transition: 0.1s ease;
+  z-index: 100;
+}
+
+.labelline {
+  position: absolute;
+  font-size: 0.8rem;
+  color: rgb(0, 0, 0);
+  padding: 0 6px;
+  margin: 0 16px;
+  background-color: #f3f4f6;
+  transition: 0.2s ease;
+}
+
+.req:after {
+  content: " *";
+  color: red;
+}
+
+.entryarea input:focus,
+.entryarea input:valid {
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.entryarea input:focus + .labelline,
+.entryarea input:valid + .labelline {
+  color: rgb(0, 0, 0);
+  height: 30px;
+  line-height: 30px;
+  padding: 0 8px;
+  transform: translate(-15px, -16px) scale(0.88);
+  z-index: 100;
+}
+
+.contact-info {
+  width: 50%;
+}
+
+.contact-info > h3 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+main > button {
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 450;
+  background-color: rgb(31, 31, 31);
+  color: white;
+  margin-top: 12px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+main > button:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: 1px solid black;
+}
+
+.address-info {
+  width: 50%;
+}
+
+.address-info > h3 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.aside-nav nav ul li:nth-child(6) {
+  border-left: 4px solid #000;
+}

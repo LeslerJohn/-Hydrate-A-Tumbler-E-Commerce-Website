@@ -1,0 +1,282 @@
+header {
+  height: 84px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  background-color: transparent;
+  transition: all 0.2s ease;
+  z-index: 999;
+}
+
+.head-con {
+  width: 100%;
+}
+
+.header-scrolled {
+  background-color: #ffffff;
+  height: 70px;
+  box-shadow: 3px 3px 3px #d2d2d2;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-family: "Sulphur", "Helvetica Neue", Helvetica, Arial;
+}
+
+.left-header {
+  margin-left: 1rem;
+  margin-right: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.left-header .logo {
+  height: 38px;
+  aspect-ratio: 1;
+  margin-right: 6px;
+  object-fit: cover;
+  mix-blend-mode: difference;
+  z-index: 1100;
+}
+
+.right-header {
+  margin-right: 0.5rem;
+}
+
+.middle-header {
+  flex: 1;
+}
+
+.middle-header a {
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+  font-family: "Inter", "Helvetica Neue", "Helvetica";
+  transition: all 200ms ease-in-out;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+}
+
+.middle-header ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.middle-header a:hover {
+  opacity: 0.7;
+  border-bottom: 2px solid black;
+}
+
+.right-header {
+  display: flex;
+  justify-content: end;
+  flex: end;
+  float: right;
+}
+
+.right-header button {
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  object-fit: cover;
+  object-position: center;
+  background: none;
+  float: right;
+  cursor: pointer;
+}
+
+.buttons {
+  height: 1.5rem;
+  aspect-ratio: 1;
+  transition: all 0.3s ease;
+}
+
+.right-header ul {
+  list-style: none;
+  display: flex;
+}
+
+.right-header ul li ul {
+  position: absolute;
+  list-style: none;
+  display: none;
+  width: 140px;
+  top: 60px;
+  align-self: self-end;
+  background-color: #f3f4f6;
+  animation: slideDown 0.4s ease;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+  flex-direction: column;
+}
+
+.right-header ul li ul li {
+  padding: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-size: 12px;
+  font-family: "Inter";
+}
+
+.right-header ul #account-hover ul li:hover {
+  background-color: #ababab;
+}
+
+.right-header ul li ul .logout {
+  padding: 12px;
+  border-top: 1px solid black;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+#account-hover:hover {
+  display: flex;
+  align-self: end;
+  justify-content: end;
+}
+
+.right-header a {
+  color: black;
+  text-decoration: none;
+}
+
+.right-header ul li .menu {
+  z-index: 1000;
+  display: none;
+  transition: all 0.3s ease;
+}
+
+.right-header #cart-btn button {
+  position: relative;
+}
+
+.right-header #cart-btn span {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -1px;
+  right: 2px;
+  color: white;
+  background-color: #000000;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+.middle-header .header-features {
+  position: relative;
+}
+
+.middle-header .header-features p {
+  position: absolute;
+  top: -18px;
+  right: -22px;
+  font-size: 8px;
+  font-weight: 500;
+  background-color: crimson !important;
+  padding: 3px 6px;
+  color: white;
+  border-radius: 8px;
+}
+
+#cart-hover {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+
+#cart-slidedown {
+  width: 300px;
+  height: 400px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 12px;
+}
+
+.cart-preview-products {
+  height: 100%;
+}
+
+.cart-preview-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.cart-preview-bottom button {
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+  font-size: 12px;
+  font-family: "Inter";
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: rgb(31, 31, 31);
+  color: white;
+}
+
+.cart-preview-bottom button:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+@media (max-width: 992px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+  }
+
+  .right-header ul li .menu {
+    display: block;
+    transition: all 0.3s ease;
+  }
+
+  .middle-header ul {
+    position: absolute;
+    top: 85%;
+    right: -100%;
+    width: 200px;
+    height: 250px;
+    padding: 16px 0;
+    background-color: #eaeaea;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: all 0.5s ease;
+  }
+
+  .middle-header ul li a {
+    display: block;
+    padding: 14px 18px;
+    transition: all 0.5s ease;
+    margin: 0;
+  }
+
+  .middle-header ul li a:hover {
+    background-color: #ababab;
+  }
+
+  .middle-header ul.open {
+    right: 2%;
+  }
+}

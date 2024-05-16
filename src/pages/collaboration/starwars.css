@@ -1,0 +1,17 @@
+main {
+  padding-top: 120px !important;
+}
+
+.con {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 2rem;
+}
+
+.products-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
